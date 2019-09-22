@@ -1,7 +1,83 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+//const path = require("path")
+//const { createFilepath } = require("gatsby-source-filesystem")
 
-// You can delete this file if you're not using it
+/*exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
+
+  const about = path.resolve("./src/pages/about.js")
+
+  return graphql(
+    `
+      {
+        allContentfulAbout {
+          edges {
+            node {
+              childContentfulAboutMissionTextNode {
+                mission
+              }
+              childContentfulAboutAboutUsTextNode {
+                aboutUs
+              }
+              childContentfulAboutOurTeamTextNode {
+                ourTeam
+              }
+              childContentfulAboutMissionbTextNode {
+                missionb
+              }
+              childContentfulAboutMissioncTextNode {
+                missionc
+              }
+              childContentfulAboutMissiondTextNode {
+                missiond
+              }
+              childContentfulAboutMissioneTextNode {
+                missione
+              }
+            }
+          }
+        }
+      }
+    `
+  ).then(result => {
+    if (result.errors) {
+      throw result.errors
+    }
+
+    return result
+  })
+}*/
+/*import { graphql } from "gatsby"
+
+module.exports.aboutQuery = graphql(
+  `
+    {
+      allContentfulAbout {
+        edges {
+          node {
+            childContentfulAboutMissionTextNode {
+              mission
+            }
+            childContentfulAboutAboutUsTextNode {
+              aboutUs
+            }
+            childContentfulAboutOurTeamTextNode {
+              ourTeam
+            }
+            childContentfulAboutMissionbTextNode {
+              missionb
+            }
+            childContentfulAboutMissioncTextNode {
+              missionc
+            }
+            childContentfulAboutMissiondTextNode {
+              missiond
+            }
+            childContentfulAboutMissioneTextNode {
+              missione
+            }
+          }
+        }
+      }
+    }
+  `
+)*/

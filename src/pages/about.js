@@ -1,17 +1,16 @@
 import React from "react"
 import Layout from "../components/layout"
+import { graphql } from "gatsby"
 
-const AboutPage = () => {
+const AboutPage = ({ data }) => {
+  const post = data.allContentfulAbout.edges[0].node
   return (
     <Layout>
       <section className="about-header py-5">
         <div className="py-5 d-flex flex-column align-items-center">
           <h1>About us</h1>
           <p className="mx-5">
-            We are all very different. We were born in different cities, at
-            different times, we love different music, food, movies. But we have
-            something that unites us all. It is our company. We are its heart.
-            We are not just a team, we are a family.
+            {post.childContentfulAboutAboutUsTextNode.aboutUs}
           </p>
           <button className="btn btn-white">Contact us</button>
         </div>
@@ -32,8 +31,7 @@ const AboutPage = () => {
             />
 
             <p className="text-blue">
-              It's the ability to think outside the box. We make decisions,
-              create something new and generate a lot of ideas.
+              {post.childContentfulAboutMissionTextNode.mission}
             </p>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 py-5">
@@ -49,8 +47,7 @@ const AboutPage = () => {
             />
 
             <p className="text-blue">
-              It's the ability to think outside the box. We make decisions,
-              create something new and generate a lot of ideas.
+              {post.childContentfulAboutMissionbTextNode.missionb}
             </p>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 py-5">
@@ -66,8 +63,7 @@ const AboutPage = () => {
             />
 
             <p className="text-blue">
-              It's the ability to think outside the box. We make decisions,
-              create something new and generate a lot of ideas.
+              {post.childContentfulAboutMissioncTextNode.missionc}
             </p>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 py-5">
@@ -83,8 +79,7 @@ const AboutPage = () => {
             />
 
             <p className="text-blue">
-              It's the ability to think outside the box. We make decisions,
-              create something new and generate a lot of ideas.
+              {post.childContentfulAboutMissiondTextNode.missiond}
             </p>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 py-5">
@@ -100,8 +95,7 @@ const AboutPage = () => {
             />
 
             <p className="text-blue">
-              It's the ability to think outside the box. We make decisions,
-              create something new and generate a lot of ideas.
+              {post.childContentfulAboutMissioneTextNode.missione}
             </p>
           </div>
         </div>
@@ -160,12 +154,7 @@ const AboutPage = () => {
               alt="American Us Flag Symbol Icon"
             />
           </div>
-          <p>
-            FOBY’S RARE COLLECTION OF HIGHLY QUALIFIED NATIONALS AS WELL AS
-            HIGHLY COMPETENT AND SKILLED EXPATRIATES DRIVE THE WHEEL OF OUR
-            PROGRESS IN OUR QUEST TO BECOME THE LEADING PROFESSIONAL EPC COMPANY
-            IN THE GLOBAL DREDGING, PIPELINES AND MARINE INDUSTRY.
-          </p>
+          <p>{post.childContentfulAboutOurTeamTextNode.ourTeam}</p>
         </div>
       </section>
 
@@ -204,5 +193,37 @@ const AboutPage = () => {
     </Layout>
   )
 }
+
+export const aboutQuery = graphql`
+  query {
+    allContentfulAbout {
+      edges {
+        node {
+          childContentfulAboutMissionTextNode {
+            mission
+          }
+          childContentfulAboutAboutUsTextNode {
+            aboutUs
+          }
+          childContentfulAboutOurTeamTextNode {
+            ourTeam
+          }
+          childContentfulAboutMissionbTextNode {
+            missionb
+          }
+          childContentfulAboutMissioncTextNode {
+            missionc
+          }
+          childContentfulAboutMissiondTextNode {
+            missiond
+          }
+          childContentfulAboutMissioneTextNode {
+            missione
+          }
+        }
+      }
+    }
+  }
+`
 
 export default AboutPage
