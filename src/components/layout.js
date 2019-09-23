@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
       <Header />
       <div>
         <main>{children}</main>
-        <footer>© {new Date().getFullYear()}</footer>
+        <footer className="text-center">© {new Date().getFullYear()}</footer>
       </div>
     </>
   )

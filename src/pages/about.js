@@ -176,8 +176,8 @@ const AboutPage = ({ data }) => {
             <div class="carousel-item">
               <img
                 class=""
-                src="https://thenationonlineng.net/wp-content/uploads/2019/01/NNPC-e1491333545387.jpg"
-                alt="Chevron"
+                src="https://www.von.gov.ng/wp-content/uploads/2018/07/NNPC-LOGO.jpg"
+                alt="NNPC"
               />
             </div>
             <div class="carousel-item">

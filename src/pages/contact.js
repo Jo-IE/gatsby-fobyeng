@@ -1,5 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
+import {
+  FaHome,
+  FaPhone,
+  FaEnvelopeOpenText,
+  FaGlobeAfrica,
+} from "react-icons/fa"
 
 const ContactPage = () => {
   return (
@@ -14,7 +20,7 @@ const ContactPage = () => {
         <div class="container py-3">
           <div class="row">
             <span class="col-1 px-2">
-              <i class="fa fa-home fa-lg " aria-hidden="true"></i>
+              <FaHome className="contact-icon" />
             </span>
 
             <p class="col-10">
@@ -24,7 +30,7 @@ const ContactPage = () => {
           </div>
           <div class="row">
             <span class="col-1 px-2">
-              <i class="fa fa-phone-alt fa-lg " aria-hidden="true"></i>
+              <FaPhone className="contact-icon" />
             </span>
 
             <p class="col-10">
@@ -33,21 +39,37 @@ const ContactPage = () => {
           </div>
           <div class="row">
             <span class="col-1 px-2">
-              <i class="fa fa-envelope-open-text fa-lg " aria-hidden="true"></i>
+              <FaEnvelopeOpenText className="contact-icon" />
             </span>
 
             <p class="col-10">
-              <strong> E-mail:</strong> info@seointernationalng.com
+              <strong> E-mail:</strong> info@fobydredging.com
             </p>
           </div>
 
           <div class="row">
             <span class="col-1 px-2">
-              <i class="fa fa-globe-africa fa-lg " aria-hidden="true"></i>
+              <FaGlobeAfrica className="contact-icon" />
             </span>
 
             <p class="col-10">
-              <strong>Website:</strong> www.seointernationalng.com
+              <strong>Website:</strong> www.fobydredging.com
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto py-5 contact-div">
+        <h2 class="font-weight-light px-5">Warri</h2>
+        <div class="container py-3">
+          <div class="row">
+            <span class="col-1 px-2">
+              <FaHome className="contact-icon" />
+            </span>
+
+            <p class="col-10">
+              No. 5 praise drive, Jakpa road off Warri-Effurun road, Warri.
+              Delta state
             </p>
           </div>
         </div>

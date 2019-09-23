@@ -5,9 +5,9 @@ import React from "react"
 const Header = () => (
   <header>
     <nav className="navbar navbar-expand-lg navbar-dark nav-blue">
-      <a className="navbar-brand" href="#">
+      <Link to="/" className="navbar-brand">
         Foby Dredging and Marine
-      </a>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -21,18 +21,18 @@ const Header = () => (
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
-          <a className="nav-item nav-link active" href="#">
+          <Link to="/" className="nav-item nav-link active">
             Home <span className="sr-only">(current)</span>
-          </a>
-          <a className="nav-item nav-link" href="/about.js">
+          </Link>
+          <Link to="/about/" className="nav-item nav-link">
             About
-          </a>
-          <a className="nav-item nav-link" href="/services.js">
+          </Link>
+          <Link to="/services/" className="nav-item nav-link">
             Services
-          </a>
-          <a className="nav-item nav-link" href="/contact.js">
+          </Link>
+          <Link to="/contact/" className="nav-item nav-link">
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
