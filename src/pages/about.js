@@ -159,7 +159,7 @@ const AboutPage = ({ data }) => {
       </section>
 
       <section className="about-clients">
-        <h2 className="text-white text-center py-5">Our Clients</h2>
+        <h2 className="text-blue text-center py-5">Our Clients</h2>
         <div
           id="carouselExampleSlidesOnly"
           className="carousel slide "
@@ -168,21 +168,21 @@ const AboutPage = ({ data }) => {
           <div class="carousel-inner text-center">
             <div class="carousel-item active">
               <img
-                class=""
+                class="client-icon"
                 src="https://www.chevron.com/-/media/shared-media/images/hallmark.png"
                 alt="Chevron"
               />
             </div>
             <div class="carousel-item">
               <img
-                class=""
+                class="client-icon"
                 src="https://www.von.gov.ng/wp-content/uploads/2018/07/NNPC-LOGO.jpg"
                 alt="NNPC"
               />
             </div>
             <div class="carousel-item">
               <img
-                class=""
+                class="client-icon"
                 src="https://www.chevron.com/-/media/shared-media/images/hallmark.png"
                 alt="Chevron"
               />

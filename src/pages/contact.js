@@ -7,7 +7,8 @@ import {
   FaGlobeAfrica,
 } from "react-icons/fa"
 
-const ContactPage = () => {
+const ContactPage = ({ data }) => {
+  const post = data.allContentfulContact.edges
   return (
     <Layout>
       <section className="services-header py-5">
@@ -23,10 +24,7 @@ const ContactPage = () => {
               <FaHome className="contact-icon" />
             </span>
 
-            <p class="col-10">
-              No. 34/36 Tombia Street, G.R.A Phase 2, Port Harcourt, Rivers
-              State. Nigeria.
-            </p>
+            <p class="col-10">{post[1].node.address}</p>
           </div>
           <div class="row">
             <span class="col-1 px-2">
@@ -34,7 +32,7 @@ const ContactPage = () => {
             </span>
 
             <p class="col-10">
-              <strong>Tel:</strong> 08034021459
+              <strong>Tel:</strong> {post[1].node.phone}
             </p>
           </div>
           <div class="row">
@@ -43,7 +41,7 @@ const ContactPage = () => {
             </span>
 
             <p class="col-10">
-              <strong> E-mail:</strong> info@fobydredging.com
+              <strong> E-mail:</strong> {post[1].node.email}
             </p>
           </div>
 
@@ -53,7 +51,7 @@ const ContactPage = () => {
             </span>
 
             <p class="col-10">
-              <strong>Website:</strong> www.fobydredging.com
+              <strong>Website:</strong> {post[1].node.website}
             </p>
           </div>
         </div>
@@ -67,15 +65,27 @@ const ContactPage = () => {
               <FaHome className="contact-icon" />
             </span>
 
-            <p class="col-10">
-              No. 5 praise drive, Jakpa road off Warri-Effurun road, Warri.
-              Delta state
-            </p>
+            <p class="col-10">{post[0].node.address}</p>
           </div>
         </div>
       </section>
     </Layout>
   )
 }
+
+export const aboutQuery = graphql`
+  query {
+    allContentfulContact {
+      edges {
+        node {
+          address
+          phone
+          email
+          website
+        }
+      }
+    }
+  }
+`
 
 export default ContactPage

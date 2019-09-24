@@ -61,14 +61,79 @@ img.abouticon {
 
 .about-clients {
   height: 40vh;
-  background: #276fbf;
 }
 
 .text-blue {
   color: #276fbf;
 }
 
+.client-icon {
+  height: 60px;
+}
+
 /* services page */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: white;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-image: none;
+}
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 55px;
+  color: #276fbf;
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 55px;
+  color: #276fbf;
+}
+.carousel-inner > .item > img {
+  min-height: 300px;
+  max-height: 300px;
+  width: 100%;
+}
+.service-carousel {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+.bigdredger {
+  background-image: url("../../public/images/bigdredger.jpg");
+}
+
+.bwconstruct {
+  background-image: url("../../public/images/breakwaterconstr.jpg");
+}
+.bwswamp {
+  background-image: url("../../public/images/swampexcavator.jpg");
+}
+
+.splithopper {
+  background-image: url("../../public/images/splithopperbarge.jpg");
+}
+.pipelayer {
+  background-image: url("../../public/images/pipelayer.jpg");
+}
+.plbarge {
+  background-image: url("../../public/images/pipelayerbarge.jpg");
+}
+
+.liftcrane {
+  background-image: url("../../public/images/heavyliftcrane.jpg");
+}
+.jackupbarge {
+  background-image: url("../../public/images/jackupbarge.jpg");
+}
 
 h3 {
   color: black;

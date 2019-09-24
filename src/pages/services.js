@@ -20,6 +20,91 @@ const ServicesPage = () => {
           <button className="btn btn-white">Contact us</button>
         </div>
       </section>
+
+      <section className="py-5">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active bigdredger service-carousel">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-4">Big Dredger</h3>
+              </div>
+            </div>
+
+            <div class="carousel-item bwconstruct service-carousel">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-4 text-center">
+                  Break Water <br />
+                  Construction
+                </h3>
+              </div>
+            </div>
+
+            <div class="carousel-item bwswamp service-carousel">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-4">Swamp Excavators</h3>
+              </div>
+            </div>
+
+            <div class="carousel-item splithopper service-carousel">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-4">Split Hopper Barge</h3>
+              </div>
+            </div>
+
+            <div class="carousel-item pipelayer service-carousel">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-4">Pipe Layer</h3>
+              </div>
+            </div>
+            <div class="carousel-item plbarge service-carousel">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-4">Pipe Layer Barge</h3>
+              </div>
+            </div>
+            <div class="carousel-item liftcrane service-carousel">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-4">Heavy lift Crane</h3>
+              </div>
+            </div>
+            <div class="carousel-item jackupbarge service-carousel">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-4">Jack-up Barge</h3>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next "
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
       <section className="py-5">
         <div class="container">
           <div class="row">
