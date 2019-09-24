@@ -17,18 +17,18 @@ const ContactPage = ({ data }) => {
         </div>
       </section>
       <section class="mx-auto py-5 contact-div">
-        <h2 class="font-weight-light px-5">Port Harcourt</h2>
+        <h2 class="font-weight-light px-5 text-blue">Port Harcourt</h2>
         <div class="container py-3">
           <div class="row">
             <span class="col-1 px-2">
-              <FaHome className="contact-icon" />
+              <FaHome className="contact-icon text-blue" />
             </span>
 
             <p class="col-10">{post[1].node.address}</p>
           </div>
           <div class="row">
             <span class="col-1 px-2">
-              <FaPhone className="contact-icon" />
+              <FaPhone className="contact-icon text-blue" />
             </span>
 
             <p class="col-10">
@@ -37,7 +37,7 @@ const ContactPage = ({ data }) => {
           </div>
           <div class="row">
             <span class="col-1 px-2">
-              <FaEnvelopeOpenText className="contact-icon" />
+              <FaEnvelopeOpenText className="contact-icon text-blue" />
             </span>
 
             <p class="col-10">
@@ -47,7 +47,7 @@ const ContactPage = ({ data }) => {
 
           <div class="row">
             <span class="col-1 px-2">
-              <FaGlobeAfrica className="contact-icon" />
+              <FaGlobeAfrica className="contact-icon text-blue" />
             </span>
 
             <p class="col-10">
@@ -58,11 +58,11 @@ const ContactPage = ({ data }) => {
       </section>
 
       <section class="mx-auto py-5 contact-div">
-        <h2 class="font-weight-light px-5">Warri</h2>
+        <h2 class="font-weight-light px-5 text-blue">Warri</h2>
         <div class="container py-3">
           <div class="row">
             <span class="col-1 px-2">
-              <FaHome className="contact-icon" />
+              <FaHome className="contact-icon text-blue" />
             </span>
 
             <p class="col-10">{post[0].node.address}</p>

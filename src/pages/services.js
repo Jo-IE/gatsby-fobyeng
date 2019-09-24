@@ -52,15 +52,11 @@ const ServicesPage = () => {
               </div>
             </div>
 
-            <div class="carousel-item bwswamp service-carousel">
-              <div class="carousel-caption d-none d-md-block">
-                <h3 class="display-4">Swamp Excavators</h3>
-              </div>
-            </div>
-
             <div class="carousel-item splithopper service-carousel">
               <div class="carousel-caption d-none d-md-block">
-                <h3 class="display-4">Split Hopper Barge</h3>
+                <h3 class="display-4">
+                  Split Hopper <br /> Barge
+                </h3>
               </div>
             </div>
 

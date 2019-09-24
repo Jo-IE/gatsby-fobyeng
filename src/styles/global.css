@@ -55,6 +55,14 @@ img.abouticon {
 
   opacity: 0.5;
 }
+.card {
+  border: none;
+  transition: all 1s ease-in;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 2px 2px skyblue;
+}
 .about-team {
   background: skyblue; /*#e1edf1;*/
 }
@@ -99,7 +107,7 @@ img.abouticon {
   width: 100%;
 }
 .service-carousel {
-  height: 65vh;
+  height: 45vh;
   min-height: 350px;
   background: no-repeat center center scroll;
   -webkit-background-size: contain;

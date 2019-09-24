@@ -18,7 +18,7 @@ const AboutPage = ({ data }) => {
       <section className="about-start"></section>
       <section className="">
         <div className="row px-3 py-5 d-flex justify-content-center">
-          <div className="col-lg-4 col-md-6 col-sm-12 py-5">
+          <div className="col-lg-3 col-md-6 col-sm-12 py-5 card">
             <a
               href="https://www.freeiconspng.com/img/35905"
               title="Image from freeiconspng.com"
@@ -34,7 +34,7 @@ const AboutPage = ({ data }) => {
               {post.childContentfulAboutMissionTextNode.mission}
             </p>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-12 py-5">
+          <div className="col-lg-3 col-md-6 col-sm-12 py-5 mx-2 card">
             <a
               href="https://www.freeiconspng.com/img/3459"
               title="Image from freeiconspng.com"
@@ -50,7 +50,7 @@ const AboutPage = ({ data }) => {
               {post.childContentfulAboutMissionbTextNode.missionb}
             </p>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-12 py-5">
+          <div className="col-lg-3 col-md-6 col-sm-12 py-5  card">
             <a
               href="https://www.freeiconspng.com/img/34444"
               title="Image from freeiconspng.com"
@@ -66,7 +66,7 @@ const AboutPage = ({ data }) => {
               {post.childContentfulAboutMissioncTextNode.missionc}
             </p>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-12 py-5">
+          <div className="col-lg-4 col-md-6 col-sm-12 py-5 card my-3 mx-2 ">
             <a
               href="https://www.freeiconspng.com/img/1944"
               title="Image from freeiconspng.com"
@@ -82,7 +82,7 @@ const AboutPage = ({ data }) => {
               {post.childContentfulAboutMissiondTextNode.missiond}
             </p>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-12 py-5">
+          <div className="col-lg-4 col-md-6 col-sm-12 py-5 my-3 mx-2 card">
             <a
               href="https://www.freeiconspng.com/img/230"
               title="Image from freeiconspng.com"
