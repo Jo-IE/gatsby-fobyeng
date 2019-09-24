@@ -8,8 +8,8 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <div className="hero d-flex flex-column align-items-center py-5">
-      <h1 className="text-center py-5">
-        We aim to be the leader in innovative EPC dredging and pipeline services
+      <h1 className="text-center text-white pt-5 my-5 hero-text">
+        To be the leader in innovative EPC dredging <br /> and pipeline services
         globally.
       </h1>
       <button className="btn btn-white text-center">Learn More</button>

@@ -1,11 +1,10 @@
 import React, { Component } from "react"
 import Layout from "../components/layout"
-import { TiWaves } from "react-icons/ti"
-import { TiAnchor } from "react-icons/ti"
-import { GiSinagot } from "react-icons/gi"
-import { GiCargoCrane } from "react-icons/gi"
-import { FaRulerCombined } from "react-icons/fa"
-import { FaShip } from "react-icons/fa"
+import { TiAnchor, TiWaves } from "react-icons/ti"
+
+import { GiCargoCrane, GiSinagot } from "react-icons/gi"
+import { FaRulerCombined, FaShip } from "react-icons/fa"
+import { Link } from "gatsby"
 
 const ServicesPage = () => {
   return (
@@ -17,7 +16,9 @@ const ServicesPage = () => {
             We provide engineering, procurement and commissioning (EPC) for the
             following services
           </p>
-          <button className="btn btn-white">Contact us</button>
+          <button className="btn btn-white">
+            <Link to="/contact/"> Contact us</Link>
+          </button>
         </div>
       </section>
 

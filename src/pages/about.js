@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
+import { Link } from "gatsby"
 
 const AboutPage = ({ data }) => {
   const post = data.allContentfulAbout.edges[0].node
@@ -9,10 +10,12 @@ const AboutPage = ({ data }) => {
       <section className="about-header py-5">
         <div className="py-5 d-flex flex-column align-items-center">
           <h1>About us</h1>
-          <p className="mx-5">
+          <p className="mx-5 text-center">
             {post.childContentfulAboutAboutUsTextNode.aboutUs}
           </p>
-          <button className="btn btn-white">Contact us</button>
+          <button className="btn btn-white">
+            <Link to="/contact/"> Contact us</Link>
+          </button>
         </div>
       </section>
       <section className="about-start"></section>
