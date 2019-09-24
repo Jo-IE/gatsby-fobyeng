@@ -12,7 +12,9 @@ const IndexPage = () => (
         To be the leader in innovative EPC dredging <br /> and pipeline services
         globally.
       </h1>
-      <button className="btn btn-white text-center">Learn More</button>
+      <Link to="/about/">
+        <button className="btn btn-white text-center">Learn More</button>
+      </Link>
     </div>
   </Layout>
 )

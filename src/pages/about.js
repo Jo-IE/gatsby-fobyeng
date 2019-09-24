@@ -13,13 +13,14 @@ const AboutPage = ({ data }) => {
           <p className="mx-5 text-center">
             {post.childContentfulAboutAboutUsTextNode.aboutUs}
           </p>
-          <button className="btn btn-white">
-            <Link to="/contact/"> Contact us</Link>
-          </button>
+          <Link to="/contact/">
+            <button className="btn btn-white">Contact us</button>
+          </Link>
         </div>
       </section>
       <section className="about-start"></section>
       <section className="">
+        <h2 className="text-center text-blue my-5">Mission</h2>
         <div className="row px-3 py-5 d-flex justify-content-center">
           <div className="col-lg-3 col-md-6 col-sm-12 py-5 card">
             <a
@@ -164,11 +165,11 @@ const AboutPage = ({ data }) => {
       <section className="about-clients">
         <h2 className="text-blue text-center py-5">Our Clients</h2>
         <div
-          id="carouselExampleSlidesOnly"
-          className="carousel slide "
+          id="carouselExampleIndicators"
+          className="carousel slide"
           data-ride="carousel"
         >
-          <div class="carousel-inner text-center">
+          <div class="carousel-inner text-center" role="listbox">
             <div class="carousel-item active">
               <img
                 class="client-icon"
@@ -179,18 +180,43 @@ const AboutPage = ({ data }) => {
             <div class="carousel-item">
               <img
                 class="client-icon"
-                src="https://www.von.gov.ng/wp-content/uploads/2018/07/NNPC-LOGO.jpg"
-                alt="NNPC"
+                src="http://www.logosvectorfree.com/wp-content/uploads/2018/08/Shell-Logos-Vector-Icon-Free-Download.jpg"
+                alt="Shell"
               />
             </div>
             <div class="carousel-item">
               <img
                 class="client-icon"
-                src="https://www.chevron.com/-/media/shared-media/images/hallmark.png"
-                alt="Chevron"
+                src="https://upload.wikimedia.org/wikipedia/commons/8/80/Logo-Royal-IHC_Tekengebied-1.png"
+                alt="IHC"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="client-icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Caterpillar-shortened.svg"
+                alt="Caterpillar"
               />
             </div>
           </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next "
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </section>
     </Layout>
