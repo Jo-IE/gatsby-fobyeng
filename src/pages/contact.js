@@ -24,7 +24,7 @@ const ContactPage = ({ data }) => {
               <FaHome className="contact-icon text-blue" />
             </span>
 
-            <p class="col-10">{post[1].node.address}</p>
+            <p class="col-10">{post[0].node.address}</p>
           </div>
           <div class="row">
             <span class="col-1 px-2">
@@ -32,7 +32,7 @@ const ContactPage = ({ data }) => {
             </span>
 
             <p class="col-10">
-              <strong>Tel:</strong> {post[1].node.phone}
+              <strong>Tel:</strong> {post[0].node.phone}
             </p>
           </div>
           <div class="row">
@@ -41,7 +41,7 @@ const ContactPage = ({ data }) => {
             </span>
 
             <p class="col-10">
-              <strong> E-mail:</strong> {post[1].node.email}
+              <strong> E-mail:</strong> {post[0].node.email}
             </p>
           </div>
 
@@ -51,7 +51,7 @@ const ContactPage = ({ data }) => {
             </span>
 
             <p class="col-10">
-              <strong>Website:</strong> {post[1].node.website}
+              <strong>Website:</strong> {post[0].node.website}
             </p>
           </div>
         </div>
