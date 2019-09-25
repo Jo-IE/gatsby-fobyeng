@@ -123,31 +123,31 @@ img.abouticon {
   background-size: contain;
 }
 .bigdredger {
-  background-image: url("../../public/images/bigdredger.jpg");
+  background-image: url("../images/images/bigdredger.jpg");
 }
 
 .bwconstruct {
-  background-image: url("../../public/images/breakwaterconstr.jpg");
+  background-image: url("../images/images/breakwaterconstr.jpg");
 }
 .bwswamp {
-  background-image: url("../../public/images/swampexcavator.jpg");
+  background-image: url("../images/images/swampexcavator.jpg");
 }
 
 .splithopper {
-  background-image: url("../../public/images/splithopperbarge.jpg");
+  background-image: url("../images/images/splithopperbarge.jpg");
 }
 .pipelayer {
-  background-image: url("../../public/images/pipelayer.jpg");
+  background-image: url("../images/images/pipelayer.jpg");
 }
 .plbarge {
-  background-image: url("../../public/images/pipelayerbarge.jpg");
+  background-image: url("../images/images/pipelayerbarge.jpg");
 }
 
 .liftcrane {
-  background-image: url("../../public/images/heavyliftcrane.jpg");
+  background-image: url("../images/images/heavyliftcrane.jpg");
 }
 .jackupbarge {
-  background-image: url("../../public/images/jackupbarge.jpg");
+  background-image: url("../images/images/jackupbarge.jpg");
 }
 
 h3 {
