@@ -2,6 +2,13 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
+import {
+  FaUsers,
+  FaChartLine,
+  FaLaptop,
+  FaProjectDiagram,
+} from "react-icons/fa"
+import { GiStairsGoal } from "react-icons/gi"
 
 const AboutPage = ({ data }) => {
   const post = data.allContentfulAbout.edges[0].node
@@ -23,82 +30,37 @@ const AboutPage = ({ data }) => {
         <h2 className="text-center text-blue my-5">Mission</h2>
         <div className="row px-3 py-5 d-flex justify-content-center">
           <div className="col-lg-3 col-md-6 col-sm-12 py-5 card">
-            <a
-              href="https://www.freeiconspng.com/img/35905"
-              title="Image from freeiconspng.com"
-            ></a>
-            <img
-              className="abouticon"
-              src="https://www.freeiconspng.com/uploads/customer-group-customers-forum-people-users-icon-2.jpg"
-              width="350"
-              alt="customer group, customers, forum, people, users icon"
-            />
+            <FaUsers className="abouticon mx-auto " />
 
-            <p className="text-blue">
+            <p className="text-blue py-5">
               {post.childContentfulAboutMissionTextNode.mission}
             </p>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12 py-5 mx-2 card">
-            <a
-              href="https://www.freeiconspng.com/img/3459"
-              title="Image from freeiconspng.com"
-            ></a>
-            <img
-              className="abouticon"
-              src="https://www.freeiconspng.com/uploads/business-chart-diagram-icon-0.png"
-              width="350"
-              alt="Business chart diagram icon"
-            />
+            <FaChartLine className="abouticon mx-auto" />
 
-            <p className="text-blue">
+            <p className="text-blue py-5">
               {post.childContentfulAboutMissionbTextNode.missionb}
             </p>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12 py-5  card">
-            <a
-              href="https://www.freeiconspng.com/img/34444"
-              title="Image from freeiconspng.com"
-            ></a>
-            <img
-              className="abouticon"
-              src="https://www.freeiconspng.com/uploads/computer-laptop-technology-icon-10.png"
-              width="350"
-              alt="computer, laptop, technology icon"
-            />
+            <FaLaptop className="abouticon mx-auto" />
 
-            <p className="text-blue">
+            <p className="text-blue py-5">
               {post.childContentfulAboutMissioncTextNode.missionc}
             </p>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 py-5 card my-3 mx-2 ">
-            <a
-              href="https://www.freeiconspng.com/img/1944"
-              title="Image from freeiconspng.com"
-            ></a>
-            <img
-              className="abouticon"
-              src="https://www.freeiconspng.com/uploads/our-featured-products-and-services--seattle-web-design-seattle-wa-16.png"
-              width="350"
-              alt="Our Featured Products and Services"
-            />
+            <FaProjectDiagram className="abouticon mx-auto" />
 
-            <p className="text-blue">
+            <p className="text-blue py-5">
               {post.childContentfulAboutMissiondTextNode.missiond}
             </p>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 py-5 my-3 mx-2 card">
-            <a
-              href="https://www.freeiconspng.com/img/230"
-              title="Image from freeiconspng.com"
-            ></a>
-            <img
-              className="abouticon"
-              src="https://www.freeiconspng.com/uploads/business-meeting-icon-buy-this-icon-for--0-99-1.png"
-              width="350"
-              alt="Business Meeting Icon"
-            />
+            <GiStairsGoal className="abouticon mx-auto" />
 
-            <p className="text-blue">
+            <p className="text-blue py-5">
               {post.childContentfulAboutMissioneTextNode.missione}
             </p>
           </div>
@@ -158,7 +120,9 @@ const AboutPage = ({ data }) => {
               alt="American Us Flag Symbol Icon"
             />
           </div>
-          <p>{post.childContentfulAboutOurTeamTextNode.ourTeam}</p>
+          <p className="about-team-text">
+            {post.childContentfulAboutOurTeamTextNode.ourTeam}
+          </p>
         </div>
       </section>
 

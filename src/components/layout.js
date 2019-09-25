@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "typeface-raleway"
+import { Helmet } from "react-helmet"
 
 import Header from "./header"
 import "./layout.css"
@@ -26,6 +27,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Helmet>
+        <title>Foby Dredging and Marine</title>
+      </Helmet>
       <Header />
       <div>
         <main>{children}</main>
