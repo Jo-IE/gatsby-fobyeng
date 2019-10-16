@@ -1,4 +1,5 @@
-#Foby Site
+
+# Foby Site
 
 This is a static website built using Gatsby. About page and Contact page information is delivered using Contentful.
 
