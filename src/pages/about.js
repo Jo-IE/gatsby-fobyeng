@@ -66,7 +66,7 @@ const AboutPage = ({ data }) => {
           </div>
         </div>
       </section>
-      <section className="about-team">
+      <section className="about-team py-5">
         <div className="d-flex align-items-center pr-5 pl-3 py-5">
           <div className="d-flex align-items-center">
             <a
