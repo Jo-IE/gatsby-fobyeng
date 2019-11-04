@@ -67,28 +67,8 @@ const AboutPage = ({ data }) => {
         </div>
       </section>
       <section className="about-team">
-        <div className="d-flex align-items-center px-3 py-5">
+        <div className="d-flex align-items-center pr-5 pl-3 py-5">
           <div className="d-flex align-items-center">
-            <a
-              href="https://www.freeiconspng.com/img/48876"
-              title="Image from freeiconspng.com"
-            ></a>
-            <img
-              className="abouticon"
-              src="https://www.freeiconspng.com/uploads/line-material-property-flags-germany-14.png"
-              width="350"
-              alt="Line Material property flags Germany"
-            />
-            <a
-              href="https://www.freeiconspng.com/img/10270"
-              title="Image from freeiconspng.com"
-            ></a>
-            <img
-              className="abouticon"
-              src="https://www.freeiconspng.com/uploads/french-flags-icon-png-5.png"
-              width="350"
-              alt="french flags icon png"
-            />
             <a
               href="https://www.freeiconspng.com/img/10284"
               title="Image from freeiconspng.com"
@@ -120,7 +100,7 @@ const AboutPage = ({ data }) => {
               alt="American Us Flag Symbol Icon"
             />
           </div>
-          <p className="about-team-text">
+          <p className="pl-5 ml-5">
             {post.childContentfulAboutOurTeamTextNode.ourTeam}
           </p>
         </div>
