@@ -25,6 +25,9 @@ footer {
 .btn-white {
   background: white;
   color: #276fbf;
+  width: 200px;
+  height: 50px;
+
 }
 
 .btn-white:hover {
@@ -48,8 +51,8 @@ footer {
   font-weight:bold;
 }
 
-.footer{
-  background: black;
+footer{
+  background: #DBD7CD;
 }
 /* ABOUT PAGE*/
 
