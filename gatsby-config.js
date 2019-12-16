@@ -3,8 +3,8 @@ require("dotenv").config({ path: `./.env.${env}` })
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Foby Dredging and Marine Services`,
+    description: `Website for Foby Dredging and Marine Services Limited.`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -16,6 +16,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

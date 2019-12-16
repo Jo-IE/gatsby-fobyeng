@@ -8,9 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import "typeface-raleway"
 import { Helmet } from "react-helmet"
-
+import "../styles/global.css"
 import Header from "./header"
 import "./layout.css"
 
@@ -28,9 +27,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <Helmet>
+      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway&display=swap" rel="stylesheet"/>
+
         <title>Foby Dredging and Marine</title>
       </Helmet>
-      <Header className="nav-blue"/>
+      <Header />
       <div>
         <main>{children}</main>
         <footer className="text-center py-5">

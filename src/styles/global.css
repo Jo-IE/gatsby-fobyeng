@@ -1,9 +1,19 @@
-.body {
+body {
   font-family: "Raleway", sans-serif;
+  line-height: 2;
 }
 
 link {
   text-decoration: none;
+}
+p, .btn, a{
+
+  font-family: "Raleway", sans-serif;
+  line-height: 2;
+  font-weight: 500
+}
+h1, h2, h3, h5, .navbar-brand, .hero-text{
+  font-family: 'Abril Fatface', cursive;
 }
 
 .hero {

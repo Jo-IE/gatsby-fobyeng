@@ -7,8 +7,8 @@ import {
   FaChartLine,
   FaLaptop,
   FaProjectDiagram,
+  FaRegPaperPlane
 } from "react-icons/fa"
-import { GiStairsGoal } from "react-icons/gi"
 
 const AboutPage = ({ data }) => {
   const post = data.allContentfulAbout.edges[0].node
@@ -58,7 +58,7 @@ const AboutPage = ({ data }) => {
             </p>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 py-5 my-3 mx-2 card">
-            <GiStairsGoal className="abouticon mx-auto" />
+            <FaRegPaperPlane className="abouticon mx-auto" />
 
             <p className="text-blue py-5">
               {post.childContentfulAboutMissioneTextNode.missione}
@@ -67,39 +67,9 @@ const AboutPage = ({ data }) => {
         </div>
       </section>
       <section className="about-team py-5">
+      <h2 className="text-center py-5">Our Team</h2>
         <div className="d-flex align-items-center pr-5 pl-3 py-5">
-          <div className="d-flex align-items-center">
-            <a
-              href="https://www.freeiconspng.com/img/10284"
-              title="Image from freeiconspng.com"
-            ></a>
-            <img
-              className="abouticon"
-              src="https://www.freeiconspng.com/uploads/iceland-flags-icon-png-19.png"
-              width="350"
-              alt="Iceland flags icon png"
-            />
-            <a
-              href="https://www.freeiconspng.com/img/10294"
-              title="Image from freeiconspng.com"
-            ></a>
-            <img
-              className="abouticon"
-              src="https://www.freeiconspng.com/uploads/spanish-flags-icon-png-30.png"
-              width="350"
-              alt="Spanish flags icon png"
-            />
-            <a
-              href="https://www.freeiconspng.com/img/8326"
-              title="Image from freeiconspng.com"
-            ></a>
-            <img
-              className="abouticon"
-              src="https://www.freeiconspng.com/uploads/us-flag-icon-27.png"
-              width="350"
-              alt="American Us Flag Symbol Icon"
-            />
-          </div>
+
           <p className="pl-5 ml-5">
             {post.childContentfulAboutOurTeamTextNode.ourTeam}
           </p>
