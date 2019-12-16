@@ -12,6 +12,8 @@ import { Helmet } from "react-helmet"
 import "../styles/global.css"
 import Header from "./header"
 import "./layout.css"
+import { Link } from "gatsby"
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -35,6 +37,11 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer className="text-center py-5">
+          <div><ul>
+            <Link to="/" ><li className="font-weight-bold">Foby Dredging and Marine Services</li></Link>
+          <Link to="/about/" ><li>About</li></Link>
+          <Link to="/services/" ><li>Services</li></Link>
+          <Link to="/contact/" ><li>Contact</li></Link></ul></div>
           © {new Date().getFullYear()}
         </footer>
       </div>
