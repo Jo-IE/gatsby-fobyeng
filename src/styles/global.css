@@ -50,6 +50,9 @@ footer {
 .nav-item{
   font-weight:bold;
 }
+.nav-link:hover{
+border-bottom: 1px solid;
+}
 
 footer{
   background: #DBD7CD;

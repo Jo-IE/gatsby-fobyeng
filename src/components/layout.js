@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
       <Helmet>
         <title>Foby Dredging and Marine</title>
       </Helmet>
-      <Header />
+      <Header className="nav-blue"/>
       <div>
         <main>{children}</main>
         <footer className="text-center py-5">

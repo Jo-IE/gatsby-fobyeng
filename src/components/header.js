@@ -4,7 +4,7 @@ import React from "react"
 
 const Header = () => (
   <header>
-    <nav className="navbar navbar-expand-lg navbar-dark nav-blue">
+    <nav className="navbar navbar-expand-lg navbar-dark ">
       <Link to="/" className="navbar-brand">
         Foby Dredging and Marine
       </Link>
