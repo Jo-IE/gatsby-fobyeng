@@ -1,3 +1,6 @@
+if (process.env.NODE_ENV === "development") {
+  process.env.GATSBY_WEBPACK_PUBLICPATH = "/"
+}
 //const path = require("path")
 //const { createFilepath } = require("gatsby-source-filesystem")
 

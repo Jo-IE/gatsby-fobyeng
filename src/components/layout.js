@@ -14,7 +14,6 @@ import Header from "./header"
 import "./layout.css"
 import { Link } from "gatsby"
 
-
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -29,7 +28,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Helmet>
-      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway&display=swap" rel="stylesheet"/>
+        <link
+          href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway&display=swap"
+          rel="stylesheet"
+        />
 
         <title>Foby Dredging and Marine</title>
       </Helmet>
@@ -37,11 +39,24 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer className="text-center py-5">
-          <div><ul>
-            <Link to="/" ><li className="font-weight-bold">Foby Dredging and Marine Services</li></Link>
-          <Link to="/about/" ><li>About</li></Link>
-          <Link to="/services/" ><li>Services</li></Link>
-          <Link to="/contact/" ><li>Contact</li></Link></ul></div>
+          <div>
+            <ul>
+              <Link to="/">
+                <li className="font-weight-bold text-white">
+                  Foby Dredging and Marine Services
+                </li>
+              </Link>
+              <Link to="/about/">
+                <li className=" text-white">About</li>
+              </Link>
+              <Link to="/services/">
+                <li className=" text-white">Services</li>
+              </Link>
+              <Link to="/contact/">
+                <li className=" text-white">Contact</li>
+              </Link>
+            </ul>
+          </div>
           © {new Date().getFullYear()}
         </footer>
       </div>

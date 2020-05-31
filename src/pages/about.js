@@ -7,7 +7,7 @@ import {
   FaChartLine,
   FaLaptop,
   FaProjectDiagram,
-  FaRegPaperPlane
+  FaRegPaperPlane,
 } from "react-icons/fa"
 
 const AboutPage = ({ data }) => {
@@ -17,7 +17,7 @@ const AboutPage = ({ data }) => {
       <section className="about-header py-5">
         <div className="py-5 d-flex flex-column align-items-center">
           <h1>About us</h1>
-          <p className="mx-5 text-center">
+          <p className="mx-5 text-center slim-text">
             {post.childContentfulAboutAboutUsTextNode.aboutUs}
           </p>
           <Link to="/contact/">
@@ -67,17 +67,20 @@ const AboutPage = ({ data }) => {
         </div>
       </section>
       <section className="about-team py-5">
-      <h2 className="text-center py-5">Our Team</h2>
+        <h2 className="text-center py-5">Our Team</h2>
         <div className="d-flex align-items-center pr-5 pl-3 py-5">
-
-          <p className="pl-5 ml-5">
+          <p className="pl-5 ml-5 slim-text text-center">
             {post.childContentfulAboutOurTeamTextNode.ourTeam}
           </p>
+          <img
+            src="../images/images/collab.png"
+            alt="Two people collaborating"
+          />
         </div>
       </section>
 
       <section className="about-clients">
-        <h2 className="text-blue text-center py-5">Our Clients</h2>
+        <h2 className="text-blue text-center py-5 my-5">Our Clients</h2>
         <div
           id="carouselExampleIndicators"
           className="carousel slide"

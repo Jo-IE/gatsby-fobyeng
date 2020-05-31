@@ -24,14 +24,14 @@ const ContactPage = ({ data }) => {
               <FaHome className="contact-icon text-blue" />
             </span>
 
-            <p class="col-10">{post[0].node.address}</p>
+            <p class="col-10 text-blue">{post[0].node.address}</p>
           </div>
           <div class="row">
             <span class="col-1 px-2">
               <FaPhone className="contact-icon text-blue" />
             </span>
 
-            <p class="col-10">
+            <p class="col-10 text-blue">
               <strong>Tel:</strong> {post[0].node.phone}
             </p>
           </div>
@@ -40,7 +40,7 @@ const ContactPage = ({ data }) => {
               <FaEnvelopeOpenText className="contact-icon text-blue" />
             </span>
 
-            <p class="col-10">
+            <p class="col-10 text-blue">
               <strong> E-mail:</strong> {post[0].node.email}
             </p>
           </div>
@@ -50,7 +50,7 @@ const ContactPage = ({ data }) => {
               <FaGlobeAfrica className="contact-icon text-blue" />
             </span>
 
-            <p class="col-10">
+            <p class="col-10 text-blue">
               <strong>Website:</strong> {post[0].node.website}
             </p>
           </div>
