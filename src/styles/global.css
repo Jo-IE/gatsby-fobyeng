@@ -43,8 +43,6 @@ a {
   width: 50vw;
 }
 .feature_item {
-  margin-right: 20px;
-  width: 270px;
 }
 .feature_item a {
   color: #276fbf;
@@ -53,7 +51,7 @@ a {
 .index-about {
   background: #dcebf9;
   color: #276fbf;
-  height: 80vh;
+  height: 900pxvh;
 }
 footer {
   bottom: 0;

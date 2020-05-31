@@ -31,8 +31,8 @@ const IndexPage = () => (
     </div>
     <div className="index-about px-2 py-5">
       <h3 className="ml-5"> Our Services</h3>
-      <div className="features d-flex flex-lg-wrap flex-row py-5 pl-3 justify-content-around">
-        <div className="feature_item ">
+      <div className="features row d-flex flex-lg-wrap flex-row py-5 pl-3 justify-content-around">
+        <div className="feature_item col-lg-3 col-md-6 col-xs-12 mt-5">
           <h4>Dredging</h4>
           <p className="">
             A process of transporting sand from one area  (usually marine based)
@@ -40,12 +40,12 @@ const IndexPage = () => (
           </p>
         </div>
 
-        <div className="feature_item">
+        <div className="feature_item col-lg-3 col-md-6 col-xs-12 mt-5">
           <h4>Pipe and Cable Laying</h4>
           <p className="">Pipeline construction in swamp and land locations.</p>
         </div>
 
-        <div className="feature_item">
+        <div className="feature_item col-lg-3 col-md-6 col-xs-12 mt-5">
           <h4>Marine Equipment Rentals</h4>
           <p className="">
             <a href="/contact/">Contact us</a> for a full list of equipment
@@ -53,7 +53,7 @@ const IndexPage = () => (
           </p>
         </div>
 
-        <div className="feature_item">
+        <div className="feature_item col-lg-3 col-md-6 col-xs-12 mt-5">
           <h4>Port Development</h4>
           <p className="">
             Piling and Port Construction, Maintenance Dredging works for all the
