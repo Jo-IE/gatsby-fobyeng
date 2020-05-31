@@ -9,6 +9,7 @@ import {
   FaProjectDiagram,
   FaRegPaperPlane,
 } from "react-icons/fa"
+import collab from "../images/images/collab.png"
 
 const AboutPage = ({ data }) => {
   const post = data.allContentfulAbout.edges[0].node
@@ -68,13 +69,14 @@ const AboutPage = ({ data }) => {
       </section>
       <section className="about-team py-5">
         <h2 className="text-center py-5">Our Team</h2>
-        <div className="d-flex align-items-center pr-5 pl-3 py-5">
+        <div className="d-flex justify-content-around pr-5 pl-3 py-5">
           <p className="pl-5 ml-5 slim-text text-center">
             {post.childContentfulAboutOurTeamTextNode.ourTeam}
           </p>
           <img
-            src="../images/images/collab.png"
+            src={collab}
             alt="Two people collaborating"
+            className=" d-none d-lg-block"
           />
         </div>
       </section>

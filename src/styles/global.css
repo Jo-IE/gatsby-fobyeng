@@ -20,21 +20,27 @@ a {
 .hero {
   height: 100vh;
 }
+.hero img {
+}
 .hero-text {
   line-height: 4rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .index-services {
   background: #276fbf;
-  height: 50vh;
+  height: 70vh;
   color: white;
 }
 .index-services h3 {
   font-size: 2rem;
 }
+.index-services img {
+  height: 350px;
+  width: auto;
+  padding: 60px;
+}
 .index-services-text {
   width: 50vw;
-  line-height: 45px;
 }
 .feature_item {
   margin-right: 20px;
@@ -113,9 +119,8 @@ li {
 
 .about-start {
   height: 200px;
-  background: url("https://images.unsplash.com/photo-1566105734084-e1c0e8cfb31d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80");
+  background: url("https: ; //images.unsplash.com/photo-1566105734084-e1c0e8cfb31d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80");
 }
-
 .abouticon {
   font-size: 4rem;
   color: #276fbf;
@@ -123,29 +128,27 @@ li {
 img.abouticon {
   width: 100px;
 }
-
 .card {
   border: none;
   transition: all 1s ease-in;
 }
-
 .about-team {
   background: #dcebf9; /*#e1edf1;*/
   color: #276fbf;
 }
-
+.about-team img {
+  width: 500px;
+  height: auto;
+}
 .about-clients {
   height: 60vh;
 }
-
 .text-blue {
   color: #276fbf;
 }
-
 .client-icon {
   height: 60px;
 }
-
 /* services page */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -162,7 +165,6 @@ img.abouticon {
   font-size: 55px;
   color: #276fbf;
 }
-
 .carousel-control-prev-icon:after {
   content: "<";
   font-size: 55px;
@@ -185,18 +187,15 @@ img.abouticon {
   filter: grayscale(100%);
   opacity: 0.5;
 }
-
 .bigdredger {
   background-image: url("../images/images/bigdredger.jpg");
 }
-
 .bwconstruct {
   background-image: url("../images/images/breakwaterconstr.jpg");
 }
 .bwswamp {
   background-image: url("../images/images/swampexcavator.jpg");
 }
-
 .splithopper {
   background-image: url("../images/images/splithopperbarge.jpg");
 }
@@ -206,14 +205,13 @@ img.abouticon {
 .plbarge {
   background-image: url("../images/images/pipelayerbarge.jpg");
 }
-
 .liftcrane {
   background-image: url("../images/images/heavyliftcrane.jpg");
 }
+
 .jackupbarge {
   background-image: url("../images/images/jackupbarge.jpg");
 }
-
 h3 {
   color: black;
 }
@@ -221,7 +219,6 @@ h3 {
   color: black;
   text-align: center;
 }
-
 .folded-corner:hover .text {
   visibility: visible;
   color: #276fbf;
@@ -229,7 +226,6 @@ h3 {
 .Services-tab {
   margin-top: 20px;
 }
-
 /*
   nav link items
 */
@@ -247,11 +243,9 @@ h3 {
   background-color: transparent;
   box-shadow: #eee;
 }
-
 /*
   paper fold corner
 */
-
 .folded-corner:before {
   content: "";
   position: absolute;
@@ -271,7 +265,6 @@ h3 {
   border-width: 0 50px 50px 0;
   border-color: #eee #dcebf9;
 }
-
 .service_tab_1 {
   background-color: #dcebf9;
 }
@@ -279,7 +272,6 @@ h3 {
   color: #276fbf;
   transform: rotate(360deg) scale(1.5);
 }
-
 .fa-icon-image {
   color: black;
   display: inline-block;
@@ -297,9 +289,7 @@ h3 {
   text-align: center;
   transition: all 1s cubic-bezier(0.99, 0.82, 0.11, 1.41);
 }
-
 /* contact page */
-
 .contact-icon {
   font-size: 2rem;
 }

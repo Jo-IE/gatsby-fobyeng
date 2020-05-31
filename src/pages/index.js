@@ -1,10 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
+import lightbulb from "../images/images/lightbulb.png"
+import factory from "../images/images/factory.png"
 
 const IndexPage = () => (
   <Layout>
-    <div className="hero ml-5 d-flex">
+    <div className="hero ml-5 d-flex justify-content-around">
       <div>
         <h1 className="text-left text-blue pt-5 my-5 hero-text">
           We aim to be the leader <br /> in innovative EPC dredging <br /> and
@@ -15,19 +17,21 @@ const IndexPage = () => (
         </Link>
       </div>
       <img
-        src="../images/images/lightbulb.png"
+        className=" d-none d-lg-block"
+        src={lightbulb}
         alt="man standing with lightbulb"
       />
     </div>
-    <div className="index-services d-flex ">
-      <img src="../images/images/factory.png" alt="factory" />
-      <h3 className="pt-5 text-left ml-5 text-wrap index-services-text">
+    <div className="index-services d-flex justify-content-around">
+      <img src={factory} alt="factory" className="d-none d-lg-block" />
+      <h3 className="py-5 text-left  text-wrap index-services-text">
         We are a leading company in Dredging, Breakwater, Shore Protection,
         Pipelaying and Port Development
       </h3>
     </div>
     <div className="index-about px-2 py-5">
-      <div className="features d-flex flex-row py-5 pl-3 justify-content-center">
+      <h3 className="ml-5"> Our Services</h3>
+      <div className="features d-flex flex-lg-wrap flex-row py-5 pl-3 justify-content-around">
         <div className="feature_item ">
           <h4>Dredging</h4>
           <p className="">

@@ -4,7 +4,7 @@ import React from "react"
 
 const Header = () => (
   <header>
-    <nav className="navbar navbar-expand-lg navbar-dark nav-blue">
+    <nav className="navbar navbar-expand-lg navbar-dark nav-blue d-flex justify-content-between">
       <Link to="/" className="navbar-brand">
         Foby Dredging and Marine
       </Link>
@@ -20,7 +20,7 @@ const Header = () => (
         <span className="navbar-toggler-icon "></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav mx-5">
+        <div className="navbar-nav ml-5 pl-5">
           <Link to="/about/" className="nav-item nav-link">
             About
           </Link>
