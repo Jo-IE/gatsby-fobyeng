@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import lightbulb from "../images/images/lightbulb.png"
-import factory from "../images/images/factory.png"
+import lightbulb from "../images/images/bulb.svg"
+import construction from "../images/images/construction.svg"
 
 const IndexPage = () => (
   <Layout>
@@ -17,21 +17,26 @@ const IndexPage = () => (
         </Link>
       </div>
       <img
-        className=" d-none d-lg-block"
+        className=" d-none d-lg-block bulb"
         src={lightbulb}
-        alt="man standing with lightbulb"
+        alt="man holdinglightbulb"
       />
+      <img className=" blob" src={lightbulb} alt="man holdinglightbulb" />
     </div>
     <div className="index-services d-flex justify-content-around">
-      <img src={factory} alt="factory" className="d-none d-lg-block" />
-      <h3 className="py-5 text-left  text-wrap index-services-text">
+      <img
+        src={construction}
+        alt="man building factory"
+        className="d-none d-lg-block my-auto "
+      />
+      <h3 className="py-5 text-left my-auto text-wrap index-services-text">
         We are a leading company in Dredging, Breakwater, Shore Protection,
         Pipelaying and Port Development
       </h3>
     </div>
     <div className="index-about px-2 py-5">
       <h3 className="ml-5"> Our Services</h3>
-      <div className="features row d-flex flex-lg-wrap flex-row py-5 pl-3 justify-content-around">
+      <div className="features row mx-auto py-5 pl-3 justify-content-around">
         <div className="feature_item col-lg-3 col-md-6 col-xs-12 mt-5">
           <h4>Dredging</h4>
           <p className="">

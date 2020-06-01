@@ -9,7 +9,12 @@ import {
   FaProjectDiagram,
   FaRegPaperPlane,
 } from "react-icons/fa"
-import collab from "../images/images/collab.png"
+import collab from "../images/images/collaboration.svg"
+import quality from "../images/images/quality.svg"
+import growth from "../images/images/growth.svg"
+import posterity from "../images/images/posterity.svg"
+import professionalism from "../images/images/professionalism.svg"
+import innovation from "../images/images/innovation.svg"
 
 const AboutPage = ({ data }) => {
   const post = data.allContentfulAbout.edges[0].node
@@ -26,40 +31,54 @@ const AboutPage = ({ data }) => {
           </Link>
         </div>
       </section>
-      <section className="about-start"></section>
-      <section className="">
-        <h2 className="text-center text-blue my-5">Mission</h2>
+      <section className="pt-5">
+        <h2 className="text-center text-blue pt-5 my-5">Mission</h2>
         <div className="row px-3 py-5 d-flex justify-content-center">
           <div className="col-lg-3 col-md-6 col-sm-12 py-5 card">
-            <FaUsers className="abouticon mx-auto " />
+            <img
+              src={professionalism}
+              alt="two people conversing"
+              className="avatar"
+            />
 
             <p className="text-blue py-5">
               {post.childContentfulAboutMissionTextNode.mission}
             </p>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12 py-5 mx-2 card">
-            <FaChartLine className="abouticon mx-auto" />
-
-            <p className="text-blue py-5">
+            <img
+              src={growth}
+              alt="woman giving speech to crowd"
+              className="avatar"
+            />
+            <p className="text-blue ">
               {post.childContentfulAboutMissionbTextNode.missionb}
             </p>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12 py-5  card">
-            <FaLaptop className="abouticon mx-auto" />
+            <img src={innovation} className="avatar" alt="man flying a drone" />
 
             <p className="text-blue py-5">
               {post.childContentfulAboutMissioncTextNode.missionc}
             </p>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-12 py-5 card my-3 mx-2 ">
-            <FaProjectDiagram className="abouticon mx-auto" />
+          <div className="col-lg-3 col-md-6 col-sm-12 py-5  ml-0 card">
+            <img
+              src={quality}
+              alt="two people fixing equipment"
+              className="avatar"
+            />
 
             <p className="text-blue py-5">
               {post.childContentfulAboutMissiondTextNode.missiond}
             </p>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-12 py-5 my-3 mx-2 card">
-            <FaRegPaperPlane className="abouticon mx-auto" />
+          <div className="col-lg-3 col-md-6 col-sm-12 py-5  card">
+            <img
+              src={posterity}
+              alt="woman jumping over hoop"
+              className="avatar"
+            />
 
             <p className="text-blue py-5">
               {post.childContentfulAboutMissioneTextNode.missione}

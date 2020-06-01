@@ -32,7 +32,7 @@ a {
   color: white;
 }
 .index-services h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .index-services img {
   height: 350px;
@@ -52,6 +52,20 @@ a {
   background: #dcebf9;
   color: #276fbf;
   height: 900pxvh;
+}
+.bulb {
+  width: 800px;
+  height: auto;
+  margin-right: -170px;
+}
+.blob {
+  position: absolute;
+  top: -150px;
+  left: -150px;
+  z-index: -1;
+  width: 500px;
+  transform: rotate(-120deg);
+  opacity: 0.8;
 }
 footer {
   bottom: 0;
@@ -113,6 +127,10 @@ li {
 .services-header {
   background: #dcebf9; /*#dbe9ee;*/
   color: #276fbf;
+}
+.avatar {
+  width: 300px;
+  height: auto;
 }
 
 .about-start {
